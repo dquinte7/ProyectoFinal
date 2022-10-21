@@ -5,8 +5,7 @@ public class GitHubPage extends BasePage{
     private String userTextField = "//input[@id='loginusername']";
     private String passwordTextField = "//input[@id='loginpassword']";
     private String sigInButton =  "//button[contains(text(),'Log in')]";
-    private String menuButton = "//header/div[7]/details[1]/summary[1]/img[1]";
-    private String signOutButton = "//button[contains(text(),'Sign out')]";
+    private String signOutButton = "//a[@id='logout2']";
 
 
     public GitHubPage() {
@@ -34,7 +33,7 @@ public class GitHubPage extends BasePage{
     }
 
     public void closeSession(){
-        clickElement(menuButton);
+
         clickElement(signOutButton);
     }
 
