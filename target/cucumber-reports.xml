@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="8.531">
+    <testcase classname="Login user page DemoBleze" name="SigIn session in the page Github correctly" time="4.965">
+        <system-out><![CDATA[Given the user navigates to www.github.com/login............................passed
+When the user enter your dquinte7@gmail.com and 1234*.......................passed
+And click in the Sig in button and see de home page.........................passed
+Then the user close session correctly.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login user page DemoBleze" name="SigIn session in the page Github correctly 2" time="1.666">
+        <failure message="unexpected alert open: {Alert text : Wrong password.}&#10;  (Session info: chrome=106.0.5249.119): Wrong password.&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'ALEJOQ', ip: '192.168.101.38', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [76bd956e754c9bac1e1ae0034b825690, findElement {using=xpath, value=//a[@id='logout2']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\dquin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51547/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 76bd956e754c9bac1e1ae0034b825690" type="org.openqa.selenium.UnhandledAlertException"><![CDATA[Given the user navigates to www.github.com/login............................passed
+When the user enter your dquinte7@gmail.com and 9876543.....................passed
+And click in the Sig in button and see de home page.........................passed
+Then the user close session correctly.......................................failed
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=106.0.5249.119): Wrong password.
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ALEJOQ', ip: '192.168.101.38', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bd956e754c9bac1e1ae0034b825690, findElement {using=xpath, value=//a[@id='logout2']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\dquin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51547/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bd956e754c9bac1e1ae0034b825690
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at pages.BasePage.find(BasePage.java:46)
+	at pages.BasePage.clickElement(BasePage.java:50)
+	at pages.GitHubPage.closeSession(GitHubPage.java:46)
+	at steps.GitHubStep.closeSessionGitHub(GitHubStep.java:36)
+	at ✽.the user close session correctly(file:///C:/Users/dquin/OneDrive/Escritorio/calidad/ProyectoFinal/src/test/resources/features/GitHub.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Login user page DemoBleze" name="SigIn session in the page Github correctly 3" time="1.746">
+        <failure message="unexpected alert open: {Alert text : User does not exist.}&#10;  (Session info: chrome=106.0.5249.119): User does not exist.&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'ALEJOQ', ip: '192.168.101.38', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [76bd956e754c9bac1e1ae0034b825690, findElement {using=xpath, value=//a[@id='logout2']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\dquin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51547/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 76bd956e754c9bac1e1ae0034b825690" type="org.openqa.selenium.UnhandledAlertException"><![CDATA[Given the user navigates to www.github.com/login............................passed
+When the user enter your 1234* and dquinte7@gmail.com.......................passed
+And click in the Sig in button and see de home page.........................passed
+Then the user close session correctly.......................................failed
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=106.0.5249.119): User does not exist.
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ALEJOQ', ip: '192.168.101.38', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bd956e754c9bac1e1ae0034b825690, findElement {using=xpath, value=//a[@id='logout2']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\dquin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51547/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bd956e754c9bac1e1ae0034b825690
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at pages.BasePage.find(BasePage.java:46)
+	at pages.BasePage.clickElement(BasePage.java:50)
+	at pages.GitHubPage.closeSession(GitHubPage.java:46)
+	at steps.GitHubStep.closeSessionGitHub(GitHubStep.java:36)
+	at ✽.the user close session correctly(file:///C:/Users/dquin/OneDrive/Escritorio/calidad/ProyectoFinal/src/test/resources/features/GitHub.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>

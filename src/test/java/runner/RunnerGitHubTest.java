@@ -21,7 +21,6 @@ import pages.BasePage;
 public class    RunnerGitHubTest {
     @AfterClass
     public static void cleanDriver() {
-
         BasePage.closeBrowser();
     }
 }

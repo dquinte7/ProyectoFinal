@@ -15,7 +15,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
-    final static String PATH_DRIVER = "C:\\Users\\dquin\\OneDrive\\UCaldas\\Semestre 2022-2\\Calidad y Pruebas de Software\\chromedriver_win32";
+    final static String PATH_DRIVER = "C:\\Users\\dquin\\Downloads\\";
 
     protected static WebDriver driver;
     private static WebDriverWait wait;
@@ -25,12 +25,12 @@ public class BasePage {
         System.setProperty("webdriver.chrome.driver", PATH_DRIVER + "chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     }
 
     public BasePage(WebDriver driver) {
         BasePage.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     }
 
     public static void navigateTo(String url) {
@@ -46,12 +46,9 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
-
     public void clickElement(String locator) {
-
         find(locator).click();
     }
-
     public void write(String locator, String textToWrite) {
         find(locator).clear();
         find(locator).sendKeys(textToWrite);
